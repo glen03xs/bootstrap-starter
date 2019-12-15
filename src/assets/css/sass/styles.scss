@@ -10,7 +10,6 @@ Author URI: glennepomuceno.com
 @import 'base/normalize';
 @import 'base/bootstrap';
 @import 'base/font-awesome';
-// @import 'base/base';
 
 /*-------------- Plugins --------------*/
 
@@ -20,6 +19,7 @@ Author URI: glennepomuceno.com
 @import 'utilities/utilities';
 
 /*-------------- Layout --------------*/
+@import 'layout/base';
 // @import 'layout/nav';
 // @import 'layout/header';
 // @import 'layout/homepage';
