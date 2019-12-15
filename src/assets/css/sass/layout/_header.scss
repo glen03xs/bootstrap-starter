@@ -1,0 +1,130 @@
+/*---------------------------------------------------------------------------------------
+  Header Styles
+ * --------------------------------------------------------------------------------------*/
+
+/*--------------------------------------------------------------------------------------/*
+  Navigation
+ /*--------------------------------------------------------------------------------------*/
+.navbar {
+	padding: 10px 0;
+}
+
+.custom-navbar {
+	background: transparent;
+	border-width: 0;
+	@include transition($what: all, $time: 0.4s, $how: ease-in-out);
+
+	.logo {
+		padding-top: 2px;
+	}
+}
+
+.top-nav-collapse {
+	background: #fff;
+	box-shadow: 0 0 10px #333;
+	border-width: 0;
+
+	.main-menu {
+		.navbar-collapse {
+			ul {
+				li {
+					a {
+						color: $color-1;
+
+						&:hover {
+							color: $color-text;
+						}
+					}
+				}
+
+				li.active a {
+					color: $color-text;
+				}
+			}
+		}
+	}
+}
+
+.main-menu {
+	text-transform: uppercase;
+	margin-top: 6px;
+	float: right;
+	color: #fff;
+
+	.nav.navbar-nav {
+		li {
+			a {
+				color: #fff;
+				font-size: 0.8rem;
+				font-family: 'Lato', sans-serif;
+				font-weight: 600;
+				padding: 14px 10px;
+
+				&:hover {
+					background: none;
+					color: $color-1;
+				}
+
+				&:focus {
+					background: none;
+				}
+			}
+		}
+
+		li.active a {
+			color: $color-1;
+		}
+	}
+
+	button {
+		margin: 2px 0 0 12px;
+	}
+}
+
+/* Large devices (sm desktops, 767px and down) */
+@media (max-width: 767px) {
+	.custom-navbar {
+		background: #fff;
+		-webkit-transition: all 0.4s ease-in-out;
+		transition: all 0.4s ease-in-out;
+	}
+
+	.navbar-toggle {
+		float: none;
+		margin-right: 0;
+
+		.icon-bar {
+			background: #444 none repeat scroll 0 0;
+		}
+	}
+
+	.navbar-header {
+		display: inline-block;
+		float: right;
+		-webkit-transition: all 0.4s ease-in-out;
+		transition: all 0.4s ease-in-out;
+	}
+
+	.main-menu {
+		float: none;
+		text-align: center;
+
+		.nav.navbar-nav {
+			li {
+				a {
+					color: $color-1;
+
+					&:hover {
+						color: $color-1;
+					}
+				}
+
+				.btn-main-cta {
+					&:visited {
+						color: $color-1;
+					}
+				}
+			}
+		}
+	}
+}

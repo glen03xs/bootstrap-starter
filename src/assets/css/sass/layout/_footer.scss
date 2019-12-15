@@ -1,0 +1,132 @@
+ /* ---------------------------------------------------------------------------------------
+* Footer
+* --------------------------------------------------------------------------------------*/
+
+ footer {
+     background: #222222;
+     color: #fff;
+     padding: $baseline*2 0 1em;
+     text-align: center;
+
+    ul {
+        margin-left: 0;
+        list-style: none;
+        padding-left: 0;
+    }
+
+    .footer-contact {
+
+        ul {
+            margin-bottom: 1.5em;
+        
+            li {
+                display: inline-block;
+
+                a {
+                    color: #fff;
+                    font-size: 1.35rem;
+                    font-weight: 400;
+
+                    &:hover {
+                        color: $color-1;
+                    }
+                }
+            }
+
+            li:after {
+                content: '|';
+                color: $color-1;
+                margin: 0 14px 0 12px;
+                font-size: 1rem;
+            }
+
+            i:first-child:before {
+                margin-left: 0;
+            }
+
+            li:last-child:after {
+                content: none;
+            }
+       
+        }
+    }
+     
+    .copy {
+         text-align: center;
+
+         p {
+             margin-bottom: 0;
+             font-size: 1rem;
+             font-family: $font-1;
+         }
+    }
+
+    .social-footer {
+         margin: 24px 0 20px;
+
+        ul {
+             margin: 0;
+
+             li {
+                display: inline-block;
+                margin: 0 6px;
+                
+
+                i {
+                    color: #fff;
+                 
+                    &:before {
+                        font-size: 2.25rem;
+                    }
+
+                    &:hover {
+                        color: $color-1;
+                        @include transition($what: all, $time: .2s, $how: ease-in);
+                    }
+                }
+            }
+        }
+    }
+
+    hr {
+        margin: 18px 0;
+    }
+ }
+
+ /* Small devices (Mobile, 580px and down) */
+@media (max-width: 580px) {
+    footer {
+        
+        .footer-contact {
+
+            ul {
+                
+                li {
+                    display: block;
+                    margin-bottom: 6px;
+
+                    a{
+                        font-size: 1rem;
+                    }
+                }   
+                
+                li:after {
+                    content: none;
+                }
+            }
+        }
+
+        .social-footer {
+            
+            ul {
+                
+                li {
+
+                    i:before {
+                        font-size: 1.75rem;
+                    }
+                }
+            }
+        }
+    }
+}

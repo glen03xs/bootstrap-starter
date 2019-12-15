@@ -1,0 +1,98 @@
+/*---------------------------------------------------------------------------------------
+  Forms Styles
+* --------------------------------------------------------------------------------------*/
+.contact-form {
+    padding: 1.5em $baseline*8 0;
+
+  form {
+    
+    input {
+      height: 48px;
+      margin-bottom: 14px;
+      padding: 4px 12px 0;
+      width: 100%;
+    }
+
+    textarea {
+      padding: 14px 12px 0;
+      resize: none;
+    }
+
+    input,textarea {
+      border: 1px solid #8d8d8d;
+      border-radius: 0;
+      line-height: 1.25rem;     
+    }
+
+    input::placeholder, textarea::placeholder {
+      font-family: $font-1;
+      color: rgb(141, 141, 141);
+    }
+    
+    input[type=submit] {
+      border: 2px solid $color-1;
+      padding: 0px 20px;
+      margin-top: 2em;
+      width: initial;
+    }
+    
+  }
+}
+
+form {
+
+  .btn-contact-submit {
+    background: transparent;
+    border: 2px solid $color-1;
+    border-radius: 0;
+    color: $color-1;
+    font-family: $font-2;
+    font-weight: 600;
+    font-size: 1rem;
+    height: 44px;
+    padding: 10px 18px;
+    text-transform: uppercase;
+    @include transition(all, 0.3s, ease-in-out);
+
+    &:hover {
+        background: $color-1;
+        color: #fff;
+        border: 2px solid $color-1;
+    }
+  }
+}
+
+
+/* Medium devices (desktops, 991px and up) */
+@media (max-width: 991px) { 
+
+  .contact-form {
+    padding: 1.5em $baseline*5 0;
+  }
+
+
+}
+
+/* Large devices (Mobile, 640px and down) */
+@media (max-width: 640px) {
+
+  .contact-form {
+    padding: 1.5em $baseline*3 0;
+  }
+}
+
+/* Large devices (Mobile, 480px and down) */
+@media (max-width: 480px) {
+  
+  .contact-form {
+    padding: 1.5em $baseline*1 0;
+  }
+}
+
+/* Large devices (Mobile, 360px and down) */
+@media (max-width: 360px) {
+  
+  .contact-form {
+    padding: 1.5em 0;
+  }
+}

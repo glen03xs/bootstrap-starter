@@ -1,0 +1,50 @@
+/* -------------------------------------------------------------------------------------/*
+style.scss
+
+Glen Nepomuceno CSS framework
+Version: 1.0
+Author URI: glennepomuceno.com
+/* -------------------------------------------------------------------------------------*/
+
+/*-------------- Base --------------*/
+@import 'base/normalize';
+@import 'base/bootstrap';
+@import 'base/font-awesome';
+// @import 'base/base';
+
+/*-------------- Plugins --------------*/
+
+/*-------------- Utilities --------------*/
+@import 'utilities/settings';
+@import 'utilities/mixins';
+@import 'utilities/utilities';
+
+/*-------------- Layout --------------*/
+// @import 'layout/nav';
+// @import 'layout/header';
+// @import 'layout/homepage';
+@import 'layout/main';
+// @import 'layout/footer';
+// @import 'layout/sidebar';
+
+/*-------------- Pages --------------*/
+// @import 'pages/about';
+// @import 'pages/blog';
+// @import 'pages/contact';
+// @import 'pages/page';
+// @import 'pages/services';
+
+/*-------------- Parts --------------*/
+// @import 'parts/template-part';
+
+/*-------------- Modules --------------*/
+@import 'modules/btn';
+// @import 'modules/dividers';
+// @import 'modules/forms';
+@import 'modules/headline';
+@import 'modules/hero';
+// @import 'modules/tables';
+// @import 'modules/misc';
+
+/*-------------- Themes --------------*/
+// @import 'theme/theme';
